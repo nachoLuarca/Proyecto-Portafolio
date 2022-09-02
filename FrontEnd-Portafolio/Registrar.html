@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="Registrar.js"></script>
+</head>
+<body>
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">
+            <img src="Logos/C&J.jpg" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
+            C&J
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="Inicio.html">Inicio <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Empresas
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="Java.html">Java</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="Booststrap.html">Bootstrap</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="MySQL.html">MySQL</a>
+              </div>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="QuienSomos.html">Quienes somos <span class="sr-only">(current)</span></a>
+            </li>
+          </ul>
+          <a class="btn btn-outline-success my-2 my-sm-0" href="login.html" role="button" >Iniciar Sesion</a>
+          <a class="btn btn-outline-success my-2 my-sm-0" href="Registrar.html" role="button" >Registrar</a>
+        </div>
+      </nav>
+      <br>
+        <!-- Registro de usuario-->
+      <div class="row justify-content-center">
+        <div class="card border-warning text-white bg-dark mb-3" style="width: 50rem;">
+          <form action="">
+            <div class="card-header">Registro de usuario</div>
+            <div class="card-body">
+              <h5 class="card-title">Nombres</h5>
+              <input type="card-text" name="txtNombre" class="txtNombre form-control" placeholder="Ej: Javier Andres">
+              <h5 class="card-title">Apellidos</h5>
+              <input type="card-tex" name="txtApellido" class="txtApellido form-control" placeholder="Ej: Sepulveda Robledo">
+              <h5 class="card-title">Correo electronico</h5>
+              <input type="card-tex" name="txtEmail" class="txtEmail form-control" placeholder="Ej: Ejemplo@ejemplo.cl">
+              <h5 class="card-title">Contraseña</h5>
+              <input type="password" name="txtContraseña" class="txtContraseña form-control" placeholder="Ingrese su contraseña">
+              <h5 class="card-title">Celular</h5>
+              <input type="card-tex" name="txtCelular" class="txtCelular form-control" placeholder="Ej: 9 45678523">
+              <h5 class="card-title">Servico que necesitas</h5>
+              <select name="form-control" class="txtServicios form-control" id="inputServicio">
+                <option value="0"><h3>Seleccionar</h3></option>
+                <option value="1">Soporte</option>
+                <option value="2">Asesoria</option>
+              </select>
+              <br>
+              <h6 class="card-tex">Terminando su solicitud lo llamaremos de forma inmediata!!</h6>
+              <br>
+              <div class="card-body">
+                <button type="button" class="btnRegistrar btn btn-primary btn-lg btn-warning">Resgistrar</button> 
+                <a href="Registrar.html" class="btnLimpiar btn btn-primary btn-lg  btn-warning" role="button" aria-pressed="true">Limpiar campos</a>
+                <a href="Inicio.html" class="btnCancelarR btn btn-primary btn-lg  btn-warning" role="button" aria-pressed="true">Cancelar registro</a>           
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+</body>
+</html>
